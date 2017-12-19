@@ -58,7 +58,7 @@ class UserAvatar
 		return $attach_id;
 	}
 
-	protected funcion import_image($url)
+	protected function import_image($url)
 	{
 		$response = $this->http->request( $url );
 		if ( $response['response']['code'] != 200 ) {
